@@ -18,6 +18,7 @@ r = data['r'][0]
 
 sphere = current_scene.objects['pendulum_sphere']
 hook_u = current_scene.objects['hook_upper']
+focal_point = current_scene.objects['focal_point']
 
 def bake_keyframes(object):
     for index in range(data.shape[0]):
@@ -37,6 +38,7 @@ clear_keyframes(sphere)
 sphere.scale = (r*2,r*2,r*2)
 
 hook_u.location = (0.0, 0.0, l + r)
+focal_point.location = (0.0, 0.0, l/2 - r)
 
 bake_keyframes(sphere)
 
