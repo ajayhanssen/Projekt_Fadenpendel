@@ -1,12 +1,12 @@
 close all
 clear all
-l = 1; % Länge des Fadens in m
+l = 3; % Länge des Fadens in m
 t_step = 0.1; % Animationspause
 
 [t,u] = ode45(@pendel, [0 10], [pi/4 0]);
 
 plot(0,0,'x')
-axis([-1 1 -1 1])
+axis([-l l -l l])
 hold on
 
 % Beispiel ohne Luftwiderstand
