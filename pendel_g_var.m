@@ -1,4 +1,4 @@
-function uPunkt = pendel_g_var(~,u,l,g)
+function uPunkt = pendel_g_var(t,u,l,g)
 % Modell Fadenpendel ohne Luftwiderstand
 m = 1; % Masse der Kugel in kg
 J = m * l.^2; % Massenträgheitsmoment Kugel um Drehpunkt
