@@ -7,7 +7,6 @@ optionen = odeset('Events', @maximumsuche);
 
 T_exakt = t_T(end);
 T_naeherung = t_n_T(end);
-Tdiff = T_exakt/T_naeherung - zielabw;
 
 diff = abs(T_exakt/T_naeherung - zielabw);
 

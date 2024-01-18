@@ -8,3 +8,4 @@ function g_diff = erdbeschl_min(params, l, data)
     g_diff = sum(sum((u - data(:, 2:3)).^2));
 
 end
+
