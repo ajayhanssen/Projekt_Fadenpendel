@@ -4,7 +4,6 @@ import subprocess
 import os
 import pandas as pd
 
-
 current_scene = bpy.context.scene
 blend_file_path = bpy.data.filepath
 blend_file_directory = os.path.dirname(blend_file_path)
@@ -14,7 +13,6 @@ csv_path = os.path.join(blend_file_directory, csv_relative_path)
 
 data = pd.read_csv(csv_path, sep=',', names=['l', 'x', 'y'])
 l = data['l'][0]
-#r = data['r'][0]
 
 sphere = current_scene.objects['pendulum_sphere']
 hook_u = current_scene.objects['hook_upper']
@@ -30,7 +28,6 @@ def reset_position(object):
 
 def clear_keyframes(object):
     object.animation_data_clear()
-
 
 reset_position(sphere)
 clear_keyframes(sphere)

@@ -1,0 +1,8 @@
+# Projekt_Fadenpendel  
+Haupt-Live-Skript ist "pendel_master.mlx"  
+"abweichung_periodendauer(_calc).m" sind Funktionen zur Berechung der Aufgaben betreffend der Periodendauerdifferenz zwischen exakter und genäherter Lsg.  
+"erdbeschl_min.m" enthält die Funktion zur Berechnung der Schwerbeschleunigung aus den Messdaten  
+"import_coordinates.py" ist das Python-File das zum Einlesen der Koordinaten und baken der Keyframes in Blender geschrieben wurde  
+"maximumsuche.m" ist die Abbruchbedingung nach einer Periode, verwendet mit odeset()  
+"pendel.m" enthält die grundlegende DGL die mit ode45 gelöst wird  
+"pendel_anim_master" enthält di
